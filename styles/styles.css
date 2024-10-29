@@ -22,9 +22,9 @@
   }
   
   .light-mode {
-    --color-primary: #FFFFFF;
-    --color-secondary: #F56692;
-    --color-white: #454e56;
+    --color-primary: #F5F5F5;
+    --color-secondary: #27AE60;
+    --color-white: #191d2b;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #6c7983;
@@ -88,7 +88,7 @@
   }
   
   .controls {
-    position: fixed;
+    position: fixed ;
     z-index: 10;
     top: 50%;
     right: 3%;
@@ -211,10 +211,12 @@
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
     padding-bottom: 5rem;
+    width: 100%;
+    max-width: 1500px !important;
   }
   .about-container .right-about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) ;
     grid-gap: 1rem;
   }
   .about-container .right-about .about-item {
@@ -268,13 +270,16 @@
     font-size: 2rem;
     text-transform: uppercase;
   }
+  .about-container .left-about .inteted-para{
+    text-align: justify;
+  } 
   
   .about-stats {
     padding-bottom: 4rem;
   }
   .about-stats .progress-bars {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) ;
     grid-gap: 2rem;
   }
   .about-stats .progress-bars .progress-bar {
@@ -321,7 +326,7 @@
     width: 70%;
   }
   .about-stats .progress-bars .progress-bar .progress-con .progress .node {
-    width: 65%;
+    width: 90%;
   }
   .about-stats .progress-bars .progress-bar .progress-con .progress .python {
     width: 70%;
@@ -348,7 +353,7 @@
   /*Timeline*/
   .timeline {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) ;
     grid-gap: 2rem;
     padding-bottom: 3rem;
   }
@@ -726,7 +731,13 @@
       text-align: center;
       padding-top: 3rem;
     }
-  
+    /* .right-header .title-desc {
+      font-size:  3rem !important;
+      text-align: center;
+      padding-top: 0.5rem; 
+      color:white !important;
+      white-space: nowrap; 
+    } */
     .header-content .left-header .image {
       margin: 0 auto;
       width: 90%;
